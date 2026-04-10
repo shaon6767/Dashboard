@@ -22,7 +22,7 @@ export default function AnalyticsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        {/* 1. Engagement Graph (Animated Bar Simulation) */}
+        {/* 1. Engagement Graph */}
         <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
           <div className="flex justify-between items-start mb-6">
             <div className="p-3 bg-blue-50 text-blue-600 rounded-2xl">
@@ -37,9 +37,11 @@ export default function AnalyticsPage() {
             {[40, 70, 50, 90, 60, 80, 45, 95].map((h, i) => (
               <div 
                 key={i} 
-                style={{ height: `${h}%` }}
                 className="flex-1 bg-slate-100 rounded-full group-hover:bg-blue-600 transition-all duration-700 animate-entry"
-                style={{ animationDelay: `${i * 50}ms`, height: `${h}%` }}
+                style={{ 
+                  animationDelay: `${i * 50}ms`, 
+                  height: `${h}%` 
+                }}
               >
                 <div className="w-full h-1/2 bg-gradient-to-t from-white/0 to-white/20 rounded-full" />
               </div>
@@ -47,7 +49,7 @@ export default function AnalyticsPage() {
           </div>
         </div>
 
-        {/* 2. Retention Flow (Wave/Path Simulation) */}
+        {/* 2. Retention Flow */}
         <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
           <div className="flex justify-between items-start mb-6">
             <div className="p-3 bg-indigo-50 text-indigo-600 rounded-2xl">
@@ -59,7 +61,6 @@ export default function AnalyticsPage() {
           <p className="text-xs text-slate-400 mb-6">User churn vs retention</p>
           
           <div className="h-32 w-full relative overflow-hidden bg-slate-50 rounded-2xl flex items-center justify-center">
-             {/* Simple CSS Wave Simulation */}
              <div className="absolute inset-0 flex items-center opacity-20">
                 <div className="w-full h-[2px] bg-indigo-600 animate-pulse" />
              </div>
@@ -73,7 +74,7 @@ export default function AnalyticsPage() {
           </div>
         </div>
 
-        {/* 3. Traffic Sources (Doughnut Simulation) */}
+        {/* 3. Traffic Sources */}
         <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
           <div className="flex justify-between items-start mb-6">
             <div className="p-3 bg-rose-50 text-rose-600 rounded-2xl">
@@ -112,7 +113,7 @@ export default function AnalyticsPage() {
 
       </div>
 
-      {/* Global Audience Section (Filling more space) */}
+      {/* Global Audience Section */}
       <div className="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-8">
             <div className="p-3 bg-emerald-50 text-emerald-600 rounded-2xl">
