@@ -21,11 +21,11 @@ export default function SettingsPage() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="text-xs font-bold text-slate-400 uppercase">Full Name</label>
-                <p className="p-2 bg-slate-50 border border-slate-100 rounded-lg mt-1 text-sm">Admin User</p>
+                <p className="p-2 bg-slate-50 border border-slate-100 rounded-lg mt-1 text-sm">Shawon Chowdhury</p>
               </div>
               <div>
                 <label className="text-xs font-bold text-slate-400 uppercase">Email</label>
-                <p className="p-2 bg-slate-50 border border-slate-100 rounded-lg mt-1 text-sm">admin@saas.io</p>
+                <p className="p-2 bg-slate-50 border border-slate-100 rounded-lg mt-1 text-sm">Chowdhuryshaon70@gmail.com</p>
               </div>
             </div>
           </div>

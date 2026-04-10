@@ -4,7 +4,7 @@ import { RiSearchLine, RiNotification3Line, RiUserLine, RiMenu2Line } from "reac
 
 export default function Navbar() {
   return (
-    <header className="h-16 border-b bg-white/80 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-20">
+    <header className="h-16 border-b border-b-[#dfd4d4] bg-white/80 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-20">
       <div className="flex items-center gap-4">
         <button className="md:hidden p-2 hover:bg-slate-100 rounded-lg">
           <RiMenu2Line size={20} />
